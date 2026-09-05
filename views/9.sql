@@ -1,3 +1,3 @@
 SELECT "english_title", "artist" FROM "views"
-ORDER BY "brightness" ASC
+ORDER BY "brightness" DESC
 LIMIT 1;
