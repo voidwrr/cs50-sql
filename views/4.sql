@@ -1,2 +1,2 @@
 SELECT "title" FROM "views"
-WHERE "artist" = "hiroshige";
+WHERE "artist" LIKE "hiroshige" AND "english_title" LIKE "%eastern-capital%";
