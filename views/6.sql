@@ -1,2 +1,2 @@
-SELECT AVG("entropy") AS "Hiroshige Average Entropy FROM" "views"
-WHERE "artist" LIKE "hiroshige";
+SELECT AVG("entropy") AS 'Hiroshige Average Entropy' FROM "views"
+WHERE "artist" LIKE 'hiroshige';
