@@ -28,4 +28,4 @@ CREATE TABLE "temp" (
 );
 
 INSERT INTO "temp" ("phrase")
-
+SELECT
