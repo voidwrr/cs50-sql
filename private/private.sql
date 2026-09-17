@@ -23,4 +23,9 @@ SELECT SUBSTR("sentence", 14, 5) FROM "sentences"
 WHERE "id" = 3041;
 
 
-CREATE VIEW "phrase"
+CREATE TABLE "temp" (
+    "phrase" TEXT
+);
+
+INSERT INTO "temp" ("phrase")
+
