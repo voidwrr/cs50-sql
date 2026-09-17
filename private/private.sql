@@ -21,3 +21,6 @@ WHERE "id" = 2346;
 
 SELECT SUBSTR("sentence", 14, 5) FROM "sentences"
 WHERE "id" = 3041;
+
+
+CREATE VIEW "phrase"
