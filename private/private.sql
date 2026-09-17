@@ -3,7 +3,7 @@ CREATE TABLE "temp" (
 );
 
 INSERT INTO "temp" ("phrase")
-VALUES
+SELECT
 (SELECT SUBSTR("sentence", 98, 4) FROM "sentences"
 WHERE "id" = 14),
 (SELECT SUBSTR("sentence", 3, 5) FROM "sentences"
@@ -19,7 +19,7 @@ WHERE "id" = 2230),
 (SELECT SUBSTR("sentence", 44, 10) FROM "sentences"
 WHERE "id" = 2346),
 (SELECT SUBSTR("sentence", 14, 5) FROM "sentences"
-WHERE "id" = 3041;);
+WHERE "id" = 3041);
 
 CREATE VIEW "message" AS
 SELECT "phrase" FROM "temp";
