@@ -3,4 +3,4 @@ SELECT "listings"."id", "property_type", "host_name", COUNT("date") AS "days_vac
 FROM "listings"
 JOIN "availabilities" ON "listings"."id" = "availabilities"."listing_id"
 GROUP BY "listing_id"
-HAVING "date" LIKE '2023-06-%';
+HAVING "date" LIKE '2023-06-%' AND;
