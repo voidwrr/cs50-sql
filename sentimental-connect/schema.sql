@@ -15,7 +15,28 @@ CREATE TABLE `schools` (
     `id` INT AUTO_INCREMENT,
     `name` VARCHAR(64) NOT NULL,
     `type` ENUM('Primary', 'Secondary', 'Higher Education') NOT NULL,
-    `location`
-    `year`
+    `location` VARCHAR(64),
+    `year` DATETIME,
     PRIMARY KEY(`id`)
-)
+);
+
+CREATE TABLE `companies` (
+    `id` INT AUTO_INCREMENT,
+    `name` VARCHAR(64) NOT NULL,
+    `industry` ENUM('Technology', 'Education', 'Business') NOT NULL,
+    `location` VARCHAR(64),
+    PRIMARY KEY(`id`)
+);
+
+CREATE TABLE `connections_people` (
+    `username`
+    `friend_id`
+);
+
+CREATE TABLE `connections_schools` (
+
+);
+
+CREATE TABLE `connections_companies` (
+
+);
