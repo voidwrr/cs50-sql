@@ -10,3 +10,12 @@ CREATE TABLE `people` (
     `password` VARCHAR(128) NOT NULL,
     PRIMARY KEY(`id`)
 );
+
+CREATE TABLE `schools` (
+    `id` INT AUTO_INCREMENT,
+    `name` VARCHAR(64) NOT NULL,
+    `type` ENUM('Primary', 'Secondary', 'Higher Education') NOT NULL,
+    `location`
+    `year`
+    PRIMARY KEY(`id`)
+)
